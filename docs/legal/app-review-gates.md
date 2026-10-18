@@ -16,7 +16,7 @@
 | Safety information | https://streamentry.github.io/golden-moments-web/safety/ | Recommended | PENDING legal review |
 | Website privacy | https://streamentry.github.io/golden-moments-web/privacy/ | Website | PENDING deployment |
 
-GitHub Pages requires **Settings → Pages → Source: GitHub Actions** in this repository. The website can build successfully while Pages remains disabled. Do not enter unresolvable links into App Store Connect or claim that publishing the static files enabled Pages.
+GitHub Pages was enabled for this repository's existing landing site as confirmed by a successful deploy workflow on October 18, 2026. **New legal routes in this PR are not public until merged and deployed.** Confirm every final HTTPS path returns 200 before changing App Store Connect.
 
 ## Published App Store listing vs. next candidate
 
