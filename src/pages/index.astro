@@ -1,7 +1,7 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
 import ActivityDemo from '../components/ActivityDemo.astro';
-import { APP_STORE_URL, pathFor } from '../config/site';
+import { APP_STORE_URL, PLAY_STORE_URL, pathFor } from '../config/site';
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -13,14 +13,14 @@ const structuredData = {
   description: 'A calm picture matching game with familiar images, easy taps, and no time pressure.'
 };
 ---
-<SiteLayout description="A calm picture matching game for older adults and families. Explore familiar pictures, easy taps, and no-rush activities to enjoy together.">
+<SiteLayout title="Dementia games and shared picture activities" description="A calm picture matching game for older adults and families. Explore familiar pictures, easy taps, and no-rush activities to enjoy together.">
   <script type="application/ld+json" is:inline set:html={JSON.stringify(structuredData)}></script>
   <section class="hero" aria-labelledby="hero-title">
     <div class="page-shell hero-grid">
       <div class="hero-copy">
         <p class="eyebrow"><span class="eyebrow-line"></span> A gentler kind of picture game</p>
         <h1 id="hero-title">A little time together.<span> A moment worth keeping.</span></h1>
-        <p class="hero-lede">Familiar pictures, large easy-to-tap tiles, and absolutely no rush. Golden Moments makes room for a simple activity to enjoy with someone you love.</p>
+        <p class="hero-lede">Familiar pictures and a simple activity to share. Golden Moments is for older adults, families, and caregivers, including people spending time with someone living with dementia or Alzheimer's disease.</p>
         <div class="hero-actions">
           <a class="button button-primary" href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" width="23" height="23" fill="none" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5" stroke="currentColor" stroke-width="1.7"/><path d="M10 18h4" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"/></svg>
@@ -28,7 +28,7 @@ const structuredData = {
           </a>
           <a class="button button-text" href="#how-it-works">See how it works <span aria-hidden="true">↗</span></a>
         </div>
-        <p class="small-print">Free to download on the App Store. Availability and features depend on the installed version.</p>
+        <p class="small-print">Also listed on <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer">Google Play</a>. Availability and features depend on your installed version.</p>
       </div>
       <ActivityDemo />
     </div>
@@ -114,10 +114,10 @@ const structuredData = {
       <div class="memory-copy">
         <p class="eyebrow">03 / A little more personal</p>
         <h2 id="memory-title">The pictures that matter most are often your own.</h2>
-        <p>We're developing a way to choose your own family photographs for gentle activities on your device.</p>
+        <p>The upcoming 1.3.0 update adds selected family photos, shared picture viewing, and gentle matching with four large tiles to start.</p>
         <div class="planned-note">
-          <strong>In development</strong>
-          <span>Personal-photo activities are not in the currently published App Store version. No family-photo syncing service is offered.</span>
+          <strong>Coming in the 1.3.0 update</strong>
+          <span>Personal-photo activities are not in the currently published App Store version. Store review and release are still pending. No family-photo syncing service is offered.</span>
         </div>
       </div>
     </div>
@@ -159,7 +159,7 @@ const structuredData = {
         </details>
         <details>
           <summary>Can I use my own family photos?<span class="plus" aria-hidden="true"></span></summary>
-          <p>This feature is in development and is not included in the currently published App Store version. When available, the proposed flow will use photos you explicitly select, without a family-sync account.</p>
+          <p>Selected-photo activities are part of the upcoming 1.3.0 update and are not included in the currently published App Store version. The new flow uses only photos you choose, saves smaller local copies, and has no family-sync account. See the <a href={pathFor('/help/')}>version-specific help</a> before getting started.</p>
         </details>
         <details>
           <summary>Does this website collect my photos?<span class="plus" aria-hidden="true"></span></summary>

@@ -2,7 +2,7 @@
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import { APP_STORE_URL, SUPPORT_EMAIL, pathFor } from '../../config/site';
 ---
-<SiteLayout title="Support and contact" description="Get help with Golden Moments, find the app, and contact the developer by email.">
+<SiteLayout title="Support and contact" description="Get help with Golden Moments on iPhone, iPad, Android, or the website.">
   <section class="interior-hero">
     <div class="reading-column">
       <p class="eyebrow">Here to help</p>
@@ -19,13 +19,15 @@ import { APP_STORE_URL, SUPPORT_EMAIL, pathFor } from '../../config/site';
     </div>
 
     <h2>Helpful details to include</h2>
-    <p>Tell us whether you're using an iPhone, iPad, or this website; what you were trying to do; and what went wrong. If you know the app version, that's helpful too. Please avoid including medical details or personal family photos.</p>
+    <p>Tell us whether you're using an iPhone, iPad, Android device, or this website; what you were trying to do; and what went wrong. If you know the app version, that's helpful too. Please avoid including medical details or personal family photos.</p>
 
+    <h2>Start with the help guide</h2>
+    <p>Read our <a href={pathFor('/help/')}>version-specific help</a> for gentle matching, selected family photos, offline use, and keeping your originals safe.</p>
     <h2>Having trouble with the app?</h2>
     <p>Check that your device is compatible with the <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">current App Store version</a>. Close and reopen the app if a screen is stuck. Do not delete the app simply to troubleshoot if you have data you want to keep.</p>
 
     <h2>About upcoming features</h2>
-    <p>Personal family-photo activities are under development. They are not yet part of the currently published version, and the website has no photo import or family-sync service.</p>
+    <p>Personal family-photo activities are included in the upcoming 1.3.0 update, which still awaits store release. They are not yet part of the currently published version, and the website has no photo import or family-sync service.</p>
 
     <p class="back-home"><a class="text-link" href={pathFor('/')}>← Back to Golden Moments</a></p>
   </div>

@@ -1,0 +1,26 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { SUPPORT_EMAIL, pathFor } from '../../config/site';
+---
+<SiteLayout title="Terms and app licence" description="Golden Moments usage information, app licensing, photo permissions, privacy, and support.">
+  <section class="interior-hero"><div class="reading-column">
+    <p class="eyebrow">Using Golden Moments</p><h1>Terms and app licence</h1>
+    <p class="interior-lede">Golden Moments is published by Cloudjet Solutions Pte. Ltd. for recreational picture activities and shared conversation.</p>
+    <p class="small-print">Last updated October 18, 2026</p>
+  </div></section>
+  <div class="reading-column prose-page">
+    <h2>The app and this website</h2>
+    <p>This website explains Golden Moments and offers an illustrated browser activity. The illustration is not a native app screenshot. Features described as upcoming are not promises that they are already available in your installed app. Check your store listing and app version before relying on a feature.</p>
+    <h2>App licensing</h2>
+    <p>The iPhone and iPad app uses <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Apple's Standard End User Licence Agreement</a>, as shown in App Store Connect. Android distribution is subject to the terms shown by Google Play and applicable law. This information page does not replace those terms or remove your statutory consumer rights.</p>
+    <h2>Pictures you choose</h2>
+    <p>If your app version supports personal photos, use pictures you own or have permission to use. Respect the privacy and wishes of the people shown. You keep your rights in your photographs. The selected-photo feature saves local activity copies; it is not an archival, sharing, or backup service. Keep your originals separately.</p>
+    <h2>Recreation and choice</h2>
+    <p>Golden Moments does not diagnose, assess, measure, treat, or prevent dementia or Alzheimer's disease. It is not a substitute for professional care. Activities may not suit every person. Follow the person's interests, offer a way to stop, and change the activity when needed.</p>
+    <h2>Availability and privacy</h2>
+    <p>Compatibility, availability, and features depend on the device, region, and installed version. Store review or release timing can change. See our <a href={pathFor('/privacy/')}>privacy information</a> for the website and the version-specific selected-photo flow. Other websites and app stores have their own terms and privacy practices.</p>
+    <h2>Questions</h2>
+    <p>For help or questions about these pages, email <a href={'mailto:' + SUPPORT_EMAIL}>{SUPPORT_EMAIL}</a>. Please avoid sending private family photos, medical details, or passwords.</p>
+    <p><a href={pathFor('/help/')}>Read the help guide</a> · <a href={pathFor('/')}>Back to Golden Moments</a></p>
+  </div>
+</SiteLayout>
