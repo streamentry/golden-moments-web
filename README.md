@@ -40,3 +40,9 @@ See `AGENTS.md` for the implementation contract.
 `npm run test` covers the demo state machine and source invariants. `npm run verify:dist` checks the emitted GitHub Pages prefix, pages, asset links, and forbidden external scripts after `npm run build`. Build output must be checked in CI; source checks alone do not prove deployment.
 
 The app download link is the live, published App Store URL. Links to other websites open separately.
+
+## October 18, 2026 store-page alignment
+
+The website now links both public store listings and adds `/help/` and `/terms/` alongside `/support/` and `/privacy/`. Version-specific help describes the 1.3.0 update while preserving the fact that personal photos are not yet in the public release. Privacy copy distinguishes website hosting, local selected-photo copies, device backups and support email. Apple's Standard EULA remains the iOS licence; the Terms page does not introduce a replacement contract.
+
+Local validation: `npm run check` under Node 24.19.0 passed; homepage and Help were inspected through the Browser plugin. The independent copy/source review found no actionable defects. Mobile viewport, real-device accessibility, native runtime, app-store approval and public release remain separate evidence. After GitHub Pages deployment, verify the live home, help, terms, privacy, navigation and store links.

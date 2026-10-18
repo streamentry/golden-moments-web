@@ -2,12 +2,12 @@
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import { APP_STORE_URL, SUPPORT_EMAIL, pathFor } from '../../config/site';
 ---
-<SiteLayout title="Website privacy" description="How the Golden Moments website handles privacy: no accounts, cookies, analytics, forms, or photo uploads.">
+<SiteLayout title="Privacy and selected photos" description="Golden Moments website privacy and the upcoming 1.3.0 selected-photo flow: local copies, device backups, removal, and support.">
   <section class="interior-hero">
     <div class="reading-column">
       <p class="eyebrow">Plain and simple</p>
-      <h1>Website privacy</h1>
-      <p class="interior-lede">This website is built to be read, not to collect information about you.</p>
+      <h1>Privacy</h1>
+      <p class="interior-lede">Know which pictures you choose, where copies are kept, and how to remove them.</p>
       <p class="small-print">Last updated October 18, 2026</p>
     </div>
   </section>
@@ -23,6 +23,16 @@ import { APP_STORE_URL, SUPPORT_EMAIL, pathFor } from '../../config/site';
     <h2>About the Golden Moments app</h2>
     <p>This page describes the <strong>website</strong>, not every version of the mobile app. For the app's current privacy details, consult its <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">live App Store page</a> and the developer privacy-policy link shown there.</p>
     <p>Selected-family-photo activities are under development for a future app update, and are not available in the currently published App Store version. The website itself does not offer photo syncing or uploading.</p>
+
+    <h2>Selected photos in the upcoming 1.3.0 update</h2>
+    <p>The following describes the upcoming 1.3.0 update, which still awaits store release. You choose individual photos through your device's picker. The app saves smaller local copies for matching or shared viewing, with a limit of 24 pictures in one collection. It does not scan your whole library or change the originals. There is no app account, custom photo-upload service, family sync, or AI photo processing in this flow.</p>
+    <p>Remove individual copies or all photo copies through the collection controls. These actions do not delete originals from your device library. Deleting the app or clearing its storage may remove the app's copies and preferences. Keep your originals separately; this is not a photo-backup service.</p>
+    <p>Device or cloud backups may include app data, depending on your operating-system settings. If an original is stored only in iCloud or another cloud photo service, the device may retrieve it over the network before import. Those services have their own privacy practices.</p>
+    <p>Gentle-play preferences and limited sharing-prompt history are saved locally. The system share sheet opens only when you choose to share; the app invitation shares a store link rather than your photo collection. Choose destinations carefully: services you select may process what you send.</p>
+    <p>The upcoming update does not initialize Firebase at startup. Automatic Analytics collection is deactivated and automatic Crashlytics collection is disabled in its native configuration. Earlier app versions can differ; the current store privacy declarations remain the reference for the version you install.</p>
+
+    <h2>Contacting support</h2>
+    <p>If you email support, your email provider and ours process the message and address so we can respond. Send only what is needed to describe the issue. Do not send private family photos, medical information, passwords, or signing credentials. Email is separate from the app's local-photo flow.</p>
 
     <h2>Contact</h2>
     <p>For privacy questions, contact the developer at <a href={'mailto:' + SUPPORT_EMAIL}>{SUPPORT_EMAIL}</a>. Please do not email private family photos or medical information unless necessary to explain an issue.</p>

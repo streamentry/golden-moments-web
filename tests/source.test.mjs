@@ -31,6 +31,8 @@ test('every essential site page and local art file exists', () => {
     'src/pages/privacy/index.astro',
     'src/pages/accessibility/index.astro',
     'src/pages/support/index.astro',
+    'src/pages/help/index.astro',
+    'src/pages/terms/index.astro',
     'src/pages/404.astro',
     'src/pages/robots.txt.ts',
     'src/pages/sitemap.xml.ts',

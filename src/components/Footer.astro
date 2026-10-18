@@ -1,5 +1,5 @@
 ---
-import { APP_STORE_URL, SUPPORT_EMAIL, pathFor } from '../config/site';
+import { APP_STORE_URL, PLAY_STORE_URL, pathFor } from '../config/site';
 const year = new Date().getFullYear();
 ---
 <footer class="site-footer">
@@ -14,12 +14,14 @@ const year = new Date().getFullYear();
       <a href={pathFor('/activities/')}>Activity ideas</a>
       <a href={pathFor('/') + '#questions'}>Questions</a>
       <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">On the App Store</a>
+      <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer">On Google Play</a>
     </div>
     <div>
       <h2>Information</h2>
       <a href={pathFor('/accessibility/')}>Accessibility</a>
       <a href={pathFor('/privacy/')}>Privacy</a>
-      <a href={pathFor('/support/')}>Support</a>
+      <a href={pathFor('/help/')}>Help and contact</a>
+      <a href={pathFor('/terms/')}>Terms</a>
     </div>
   </div>
   <div class="page-shell footer-bottom">

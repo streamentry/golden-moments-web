@@ -1,5 +1,8 @@
 export const APP_STORE_URL =
   'https://apps.apple.com/us/app/golden-moments-memento-maze/id6749312459';
+export const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.mindfulness.golden_moments';
+export const CANDIDATE_NAME = 'Dementia Games: Golden Moments';
+export const CANDIDATE_SUBTITLE = "Alzheimer's Photo Activities";
 export const SUPPORT_EMAIL = 'apple@locuno.com';
 export const SITE_NAME = 'Golden Moments';
 export const SITE_DESCRIPTION =
