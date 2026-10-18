@@ -2,21 +2,21 @@
 
 **Prepared:** October 18, 2026  
 **Owner:** Cloudjet Solutions Pte. Ltd. (publisher shown on the US App Store listing).  
-**Status:** UNAPPROVED draft. All signoffs below start pending. This document is an operational checklist, not legal advice or proof of regulatory clearance.
+**Status:** PUBLIC PAGES LIVE AND TECHNICALLY VERIFIED. APP/LEGAL RELEASE APPROVAL PENDING. This checklist is not legal advice or proof of regulatory clearance.
 
-## Public URLs (after GitHub Pages deployment)
+## Public URLs (externally verified October 18, 2026)
 
 | App Store Connect purpose | Proposed URL | Required/optional | Status |
 | --- | --- | --- | --- |
-| App Privacy Policy URL | https://streamentry.github.io/golden-moments-web/app-privacy/ | Required | **PENDING live URL and native audit** |
-| Privacy Choices URL | https://streamentry.github.io/golden-moments-web/privacy-choices/ | Optional, recommended | PENDING live URL |
-| Support URL | https://streamentry.github.io/golden-moments-web/support/ | Required | PENDING live URL and mailbox test |
-| Marketing URL | https://streamentry.github.io/golden-moments-web/ | Optional | PENDING deployment |
-| Terms / EULA information | https://streamentry.github.io/golden-moments-web/terms/ | Linked from app | PENDING link test |
-| Safety information | https://streamentry.github.io/golden-moments-web/safety/ | Recommended | PENDING legal review |
+| App Privacy Policy URL | https://streamentry.github.io/golden-moments-web/app-privacy/ | Required | LIVE/HTTPS verified; native audit PENDING |
+| Privacy Choices URL | https://streamentry.github.io/golden-moments-web/privacy-choices/ | Optional, recommended | LIVE/HTTPS verified |
+| Support URL | https://streamentry.github.io/golden-moments-web/support/ | Required | LIVE/HTTPS verified; mailbox monitoring PENDING |
+| Marketing URL | https://streamentry.github.io/golden-moments-web/ | Optional | LIVE/HTTPS verified |
+| Terms / EULA information | https://streamentry.github.io/golden-moments-web/terms/ | Linked from app | LIVE/HTTPS verified; native link test PENDING |
+| Safety information | https://streamentry.github.io/golden-moments-web/safety/ | Recommended | LIVE/HTTPS verified; legal review PENDING |
 | Website privacy | https://streamentry.github.io/golden-moments-web/privacy/ | Website | PENDING deployment |
 
-GitHub Pages was enabled for this repository's existing landing site as confirmed by a successful deploy workflow on October 18, 2026. **New legal routes in this PR are not public until merged and deployed.** Confirm every final HTTPS path returns 200 before changing App Store Connect.
+The legal pages were merged in [PR #4](https://github.com/streamentry/golden-moments-web/pull/4) at commit `8cbe11efa1cc68b9c0c0a4e68056fab800756436`. [GitHub Actions site checks](https://github.com/streamentry/golden-moments-web/actions/runs/39134721933) and [Pages deployment](https://github.com/streamentry/golden-moments-web/actions/runs/39134721872) both succeeded. An independent live HTTPS fetch on October 18, 2026 resolved all six exact listed pages and the `/legal/` and `/help/` routes. This verifies public page availability, **not** legal signoff, support-mailbox control, or native app compliance. Recheck final URLs before entering values into App Store Connect.
 
 ## Published App Store listing vs. next candidate
 
@@ -82,11 +82,11 @@ As observed on the US listing on October 18, 2026:
 6. **Content rights:** Keep evidence ready and available in case Apple requests third-party-photo licensing proof.
 7. **Distribution:** Set links only after HTTPS page checks, choose live support email and correct store listing.
 
-## Required signoff (all pending)
+## Required signoff (only public URL availability verified)
 
 | Signoff | Evidence | Status |
 | --- | --- | --- |
-| Pages deployed and every legal URL serves HTTP 200 | External link inspection | PENDING |
+| Pages deployed and all six listed legal URLs serve publicly | CI deployment + live external fetch 2026-10-18 | **TECHNICALLY VERIFIED** |
 | Verified legal entity / DPO contact / support mailbox | Company records + mailbox test | PENDING |
 | Native SDK / traffic / permission audit | Attached test report | PENDING |
 | App Store privacy nutrition label matches native data flow | App Store Connect screenshot/report | PENDING |
