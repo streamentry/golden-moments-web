@@ -1,0 +1,46 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { APP_STORE_URL, SUPPORT_EMAIL, pathFor } from '../../config/site';
+---
+<SiteLayout title="Terms of use and app license" description="Golden Moments website terms and app license information, including the Apple standard end-user license agreement and recreational-use limitations.">
+  <section class="interior-hero">
+    <div class="reading-column">
+      <p class="eyebrow">Golden Moments / Legal</p>
+      <h1>Terms of use</h1>
+      <p class="interior-lede">Plain terms for a simple website and picture app. These terms explain the nature of the service without taking away rights that consumer law gives you.</p>
+      <p class="small-print">Effective October 18, 2026</p>
+    </div>
+  </section>
+  <div class="reading-column prose-page">
+    <h2>1. Who provides Golden Moments</h2>
+    <p>Golden Moments is published by <strong>Cloudjet Solutions Pte. Ltd.</strong>, Singapore (“we,” “us,” or “our”). You can contact us at <a href={'mailto:' + SUPPORT_EMAIL}>{SUPPORT_EMAIL}</a>.</p>
+
+    <h2>2. Your license to the mobile app</h2>
+    <p>Golden Moments for iPhone or iPad is distributed through Apple's App Store. Unless a different license is expressly provided in the relevant App Store listing, the app is licensed—not sold—under <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Apple's Standard Licensed Application End User License Agreement</a>. This website does <strong>not</strong> replace or amend that license. The current <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">App Store listing</a> governs availability and any displayed pricing.</p>
+    <p>Do not assume that a feature described as planned on our website is included in the version installed on your device. We may update or discontinue features subject to applicable consumer law and the relevant app-store terms.</p>
+
+    <h2>3. How the website may be used</h2>
+    <p>You may browse these pages and use the small illustrative picture-matching activity for personal, noncommercial purposes. You may share links to the site. Please do not misrepresent our content or imply that we endorse your product or service. Intellectual-property rights in the site's own text, illustrations, and branding remain with their respective owners, except for rights expressly granted by applicable law or license.</p>
+    <p>We do not provide a website account, photo storage service, social network, or public user-content hosting. The interactive website example does not save game scores, upload photos, or ask for personal details.</p>
+
+    <h2>4. Photos and other people's privacy</h2>
+    <p>If the mobile app version you use allows you to select family pictures, choose only pictures you have the right or permission to use and show. Respect the privacy and wishes of people pictured, especially children and people who may need help making decisions. The app is not a licensed cloud archive. Keep original photographs somewhere safe; an app copy is not a backup of your originals.</p>
+    <p>Using photos of another person does not authorize sharing their personal or health information with us or third parties. Our intended selected-photo flow stores working copies locally; the website itself does not accept uploads.</p>
+
+    <h2>5. Recreation, not medical advice</h2>
+    <p>Golden Moments provides leisure picture activities and opportunities for shared conversation. It does not diagnose, assess, monitor, treat, prevent, or slow dementia, Alzheimer's disease, or another condition. No game outcome should be used to make health or caregiving decisions.</p>
+    <p>People's interests and comfort differ. Stop or adapt an activity when it is tiring, upsetting, or unwelcome. For medical questions consult a qualified health professional; seek local emergency services for urgent situations. Our <a href={pathFor('/safety/')}>Safety and medical-use information</a> explains this in more detail.</p>
+
+    <h2>6. External services</h2>
+    <p>Links may take you to Apple, GitHub, or external caregiving resources. Those services operate under their own policies and may change independently of us. We do not control their availability or content. No link to a third-party resource is an endorsement of a particular medical treatment.</p>
+
+    <h2>7. Availability, responsibility, and legal rights</h2>
+    <p>We try to keep the website and app useful and accurate, but cannot promise uninterrupted availability or that every activity suits every person. To the extent permitted by applicable law, the site is offered as available, without additional guarantees beyond those expressly provided by law or applicable app license.</p>
+    <p>Nothing here excludes or limits a right or remedy that cannot legally be excluded, including applicable consumer rights or liability for harm that law does not permit us to disclaim. We do not require arbitration, waive class-action rights, or impose a special venue through these website terms.</p>
+
+    <h2>8. Contact, changes, and related policies</h2>
+    <p>If you believe material on the site infringes your rights, contact <a href={'mailto:' + SUPPORT_EMAIL + '?subject=Golden%20Moments%20content%20rights'}>{SUPPORT_EMAIL}</a> with the location of the content and enough detail for us to review it. Do not send personal medical files to report a content issue.</p>
+    <p>We may revise this page and update the effective date. Material changes affecting users will be handled consistently with applicable law; continued use is not deemed to waive nonwaivable rights. For handling personal information, read the <a href={pathFor('/app-privacy/')}>mobile app privacy policy</a> and <a href={pathFor('/privacy/')}>website privacy notice</a>.</p>
+    <p class="back-home"><a class="text-link" href={pathFor('/legal/')}>← Legal information</a></p>
+  </div>
+</SiteLayout>

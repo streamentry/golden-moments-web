@@ -28,3 +28,12 @@ Work in small, complete increments. Run `npm run check` locally or in GitHub Act
 Prefer native Astro, HTML, CSS, and a small amount of ordinary JavaScript. No UI framework, animation library, client hydration, external fonts, or unnecessary packages.
 
 For changes affecting privacy or published app promises, check sources again and update legal/support copy deliberately. Document exceptions instead of weakening tests.
+
+## Legal and App Review guardrails
+
+- `/privacy/` describes the website; `/app-privacy/` is the proposed App Store **mobile app privacy-policy URL**. Do not confuse them. `/privacy-choices/`, `/terms/`, `/safety/`, `/legal/` and `/support/` must remain navigable and deployed.
+- The mobile app license is the **Apple Standard EULA** by default. Do not introduce a custom EULA or binding mandatory arbitration without legal sign-off.
+- Do not promise `Data Not Collected`, no Firebase transmissions, perfect encryption, no ads, clinical benefit, or complete deletion from backups unless the exact release build is verified and App Store Connect is consistent.
+- Privacy and terms are **version-aware**. Family-photo import is in development; avoid depicting it as available in the currently published store version.
+- Never assert a published DPO contact, corporate postal address, consent, vendor DPA or medical/legal approval unless verified. Keep `docs/legal/app-review-gates.md` unresolved items visibly open until evidence exists.
+- Changes affecting data collection, marketing, region availability, in-app links, permissions, or pricing require corresponding privacy, terms, and release checklist updates before publication.

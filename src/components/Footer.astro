@@ -17,13 +17,17 @@ const year = new Date().getFullYear();
     </div>
     <div>
       <h2>Information</h2>
+      <a href={pathFor('/app-privacy/')}>App privacy policy</a>
+      <a href={pathFor('/privacy/')}>Website privacy</a>
+      <a href={pathFor('/privacy-choices/')}>Privacy choices</a>
+      <a href={pathFor('/terms/')}>Terms and license</a>
+      <a href={pathFor('/safety/')}>Safety information</a>
       <a href={pathFor('/accessibility/')}>Accessibility</a>
-      <a href={pathFor('/privacy/')}>Privacy</a>
       <a href={pathFor('/support/')}>Support</a>
     </div>
   </div>
   <div class="page-shell footer-bottom">
     <small>© {year} Golden Moments. Published by Cloudjet Solutions Pte. Ltd.</small>
-    <small>A quiet corner of the internet. No tracking or account required to browse.</small>
+    <small><a href={pathFor('/legal/')}>All legal information</a> · No tracking or account needed to browse.</small>
   </div>
 </footer>

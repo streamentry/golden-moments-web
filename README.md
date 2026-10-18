@@ -40,3 +40,17 @@ See `AGENTS.md` for the implementation contract.
 `npm run test` covers the demo state machine and source invariants. `npm run verify:dist` checks the emitted GitHub Pages prefix, pages, asset links, and forbidden external scripts after `npm run build`. Build output must be checked in CI; source checks alone do not prove deployment.
 
 The app download link is the live, published App Store URL. Links to other websites open separately.
+
+## App Review legal pages
+
+Public URLs, once GitHub Pages is enabled and the site is deployed:
+
+- App Privacy Policy: `https://streamentry.github.io/golden-moments-web/app-privacy/` (suggested App Store Connect **Privacy Policy URL**)
+- Privacy Choices: `https://streamentry.github.io/golden-moments-web/privacy-choices/` (optional **Privacy Choices URL**)
+- Support: `https://streamentry.github.io/golden-moments-web/support/`
+- Terms / standard EULA reference: `https://streamentry.github.io/golden-moments-web/terms/`
+- Safety: `https://streamentry.github.io/golden-moments-web/safety/`
+- Website privacy: `https://streamentry.github.io/golden-moments-web/privacy/`
+- Index: `https://streamentry.github.io/golden-moments-web/legal/`
+
+**Do not copy these into App Store Connect before confirming the pages are live and the native binary's disclosures match.** The public store still lists an older release. `docs/legal/app-review-gates.md` records the outstanding verification and contact-ownership decisions. Do not replace Apple's standard EULA with a custom license by default. These pages are drafts subject to legal and privacy review, not a promise of legal clearance.

@@ -1,0 +1,34 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { SUPPORT_EMAIL, pathFor } from '../../config/site';
+---
+<SiteLayout title="Safety and medical-use information" description="Golden Moments is for leisure and shared conversation, not for dementia diagnosis, treatment, screening or clinical monitoring. Safety information for families and caregivers.">
+  <section class="interior-hero">
+    <div class="reading-column">
+      <p class="eyebrow">Golden Moments / Intended use</p>
+      <h1>Safety and medical-use information</h1>
+      <p class="interior-lede">A gentle activity should feel welcome. The person matters more than completing a game.</p>
+      <p class="small-print">Updated October 18, 2026</p>
+    </div>
+  </section>
+  <div class="reading-column prose-page">
+    <h2>What Golden Moments is</h2>
+    <p>Golden Moments offers simple, recreational picture-matching and shared-looking activities for older adults and families, including people caring for a loved one living with dementia or Alzheimer's disease. The aim is an enjoyable shared activity—not a clinical result.</p>
+
+    <h2>What Golden Moments is not</h2>
+    <p>It is <strong>not a medical device intended to diagnose, screen, monitor, treat, prevent, or slow a disease</strong>. It is not a cognitive test, medical record, fall detector, wandering alert, emergency service, therapy program, or substitute for a care plan. Scores, mistakes, choices, or time spent with pictures must not be interpreted as signs of a person's health, capacity, or disease stage.</p>
+    <p>We do not claim that using the app improves memory, restores lost abilities, prevents dementia, or changes Alzheimer's progression. References to dementia and Alzheimer's identify families who might be interested in quiet picture activities, not a medical outcome or endorsement.</p>
+
+    <h2>How to keep activities comfortable</h2>
+    <p>Invite rather than insist. Choose easy-to-see pictures, allow time, and let the person decide whether to continue. Avoid quizzing names, correcting someone's memories, or interpreting a mismatch as failure. Quietly looking together is also a complete activity.</p>
+    <p>Stop, take a break, or change activities if someone is confused, frustrated, tired, distressed, or simply uninterested. Users may need another person nearby to help operate the device; the app does not replace supervision appropriate to their circumstances.</p>
+
+    <h2>If someone needs health or emergency help</h2>
+    <p>For diagnosis, treatment decisions, or advice about changes in memory, behavior, or safety, speak with a qualified clinician. If someone is in immediate danger or has an urgent medical need, call the appropriate local emergency number. Do not rely on this website or app for urgent assistance.</p>
+
+    <h2>About information on this site</h2>
+    <p>Suggestions on our <a href={pathFor('/activities/')}>activity ideas page</a> are general recreation ideas, not personalized medical advice. We do not use clinical endorsements, invented evidence, or implied study results to promote Golden Moments.</p>
+    <p>If you notice a misleading claim or safety concern, please contact <a href={'mailto:' + SUPPORT_EMAIL + '?subject=Golden%20Moments%20safety%20concern'}>{SUPPORT_EMAIL}</a>.</p>
+    <p class="back-home"><a class="text-link" href={pathFor('/legal/')}>← Legal information</a></p>
+  </div>
+</SiteLayout>
