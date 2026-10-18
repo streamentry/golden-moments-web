@@ -1,7 +1,7 @@
 import type { APIRoute } from 'astro';
 import { pathFor } from '../config/site';
 
-const pages = ['/', '/activities/', '/privacy/', '/accessibility/', '/support/', '/help/', '/terms/'];
+const pages = ['/', '/activities/', '/privacy/', '/accessibility/', '/support/', '/help/', '/terms/', '/app-privacy/', '/privacy-choices/', '/safety/', '/legal/'];
 
 export const GET: APIRoute = () => {
   const entries = pages.map(page => {
