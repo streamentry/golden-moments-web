@@ -1,0 +1,29 @@
+---
+import { APP_STORE_URL, SUPPORT_EMAIL, pathFor } from '../config/site';
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="page-shell footer-grid">
+    <div>
+      <a class="footer-brand" href={pathFor('/')}>Golden Moments<span class="footer-sun" aria-hidden="true">✳</span></a>
+      <p>Small picture activities.<br />Time together, at your own pace.</p>
+      <p class="footer-medical">For recreation and shared conversation, not for diagnosis or treatment.</p>
+    </div>
+    <div>
+      <h2>Explore</h2>
+      <a href={pathFor('/activities/')}>Activity ideas</a>
+      <a href={pathFor('/') + '#questions'}>Questions</a>
+      <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">On the App Store</a>
+    </div>
+    <div>
+      <h2>Information</h2>
+      <a href={pathFor('/accessibility/')}>Accessibility</a>
+      <a href={pathFor('/privacy/')}>Privacy</a>
+      <a href={pathFor('/support/')}>Support</a>
+    </div>
+  </div>
+  <div class="page-shell footer-bottom">
+    <small>© {year} Golden Moments. Published by Cloudjet Solutions Pte. Ltd.</small>
+    <small>A quiet corner of the internet. No tracking or account required to browse.</small>
+  </div>
+</footer>
