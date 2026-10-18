@@ -28,3 +28,12 @@ Work in small, complete increments. Run `npm run check` locally or in GitHub Act
 Prefer native Astro, HTML, CSS, and a small amount of ordinary JavaScript. No UI framework, animation library, client hydration, external fonts, or unnecessary packages.
 
 For changes affecting privacy or published app promises, check sources again and update legal/support copy deliberately. Document exceptions instead of weakening tests.
+
+
+## Legal pages and store safety
+
+- `/app-privacy/` covers the **mobile app**; `/privacy/` covers the **static website**. Preserve `/privacy-choices/`, `/terms/`, `/safety/`, `/support/`, and `/help/`, the footer, and sitemap. Keep link paths correct under the GitHub Pages project prefix.
+- Apple Standard EULA governs iOS/iPadOS unless the store provides another agreement; Android distribution is subject to Google Play terms. Do not introduce an unreviewed custom EULA, forced arbitration, waiver of mandatory consumer rights, or unsupported medical efficacy.
+- Match disclosures to signed native code/SDK/network and each store's data-safety questionnaire. Do not claim `Data Not Collected`, zero Firebase traffic or complete backup deletion from source inspection alone.
+- Verify Cloudjet's legally mandated DPO public business contact and a monitored support address; Google Play and the website currently show different support mailboxes. Do not invent persons, addresses, privacy approvals or treatment claims.
+- Family-photo features are pending public release. Older versions, future code, device backups, operating systems, email, and independent hosts are distinct. Publication requires App Review release signoff in `docs/legal/app-review-gates.md`.

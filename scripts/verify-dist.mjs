@@ -6,6 +6,10 @@ const expectedPages = [
   'index.html',
   'activities/index.html',
   'privacy/index.html',
+  'app-privacy/index.html',
+  'privacy-choices/index.html',
+  'safety/index.html',
+  'legal/index.html',
   'accessibility/index.html',
   'support/index.html',
   'help/index.html',
@@ -50,7 +54,7 @@ for (const file of expectedPages) {
 
 if (existsSync('dist/sitemap.xml')) {
   const xml = readFileSync('dist/sitemap.xml', 'utf8');
-  for (const page of ['/', '/activities/', '/privacy/', '/accessibility/', '/support/', '/help/', '/terms/']) {
+  for (const page of ['/', '/activities/', '/privacy/', '/accessibility/', '/support/', '/help/', '/terms/', '/app-privacy/', '/privacy-choices/', '/safety/', '/legal/']) {
     if (!xml.includes('https://streamentry.github.io' + prefix.slice(0, -1) + page)) {
       fail('sitemap missing ' + page);
     }

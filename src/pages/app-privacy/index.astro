@@ -1,0 +1,105 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { APP_STORE_URL, SUPPORT_EMAIL, pathFor } from '../../config/site';
+---
+<SiteLayout
+  title="Mobile app privacy policy"
+  description="Privacy information for Golden Moments on iPhone, iPad and Android: selected photos, local data, optional support contact, device backups, third-party services and deletion."
+>
+  <section class="interior-hero">
+    <div class="reading-column">
+      <p class="eyebrow">Golden Moments / Privacy</p>
+      <h1>Mobile app privacy policy</h1>
+      <p class="interior-lede">Your photographs are personal. Here's what Golden Moments does with them, what it doesn't do, and how to make your own choices.</p>
+      <p class="small-print"><time datetime="2026-10-18">Effective October 18, 2026</time> · Mobile application</p>
+    </div>
+  </section>
+  <div class="reading-column prose-page">
+    <section class="legal-summary" aria-labelledby="summary-heading">
+      <h2 id="summary-heading">The short version</h2>
+      <ul>
+        <li>Play the included picture activities without creating an account.</li>
+        <li>In versions offering family photos, <strong>you select which pictures</strong> to use. The app keeps working copies on your device; Golden Moments has no family-photo upload or sync service.</li>
+        <li>Your device's photo service and backups are separate. A backup may include app copies, even after you remove them from the app.</li>
+        <li>We receive information you choose to send to support. Other network activity and third-party software depend on your installed app version; see the details below.</li>
+      </ul>
+      <p>The app is for recreation, not medical care or cognitive assessment.</p>
+    </section>
+    <nav class="legal-page-nav" aria-label="On this page">
+      <p><strong>On this page</strong></p>
+      <a href="#who">Who provides the app</a>
+      <a href="#data">Information and uses</a>
+      <a href="#other-services">Other services</a>
+      <a href="#sharing">Sharing and security</a>
+      <a href="#retention">Retention and deletion</a>
+      <a href="#rights">Your rights</a>
+      <a href="#children">Children and location</a>
+      <a href="#changes">Updates and contact</a>
+    </nav>
+
+    <section aria-labelledby="who">
+      <h2 id="who">1. Who provides the app</h2>
+      <p><strong>Cloudjet Solutions Pte. Ltd.</strong>, based in Singapore, publishes Golden Moments. This policy covers the mobile app on iPhone, iPad, and Android where available, including versions with optional local family-photo activities. It does not describe this website's operation; read the separate <a href={pathFor('/privacy/')}>website privacy notice</a> for that.</p>
+      <p>For privacy questions or data-protection requests, email <a href={'mailto:' + SUPPORT_EMAIL + '?subject=Golden%20Moments%20privacy'}>{SUPPORT_EMAIL}</a>. Please do not include photographs, diagnoses, or medical records in your initial message.</p>
+    </section>
+
+    <section aria-labelledby="data">
+      <h2 id="data">2. Information used to provide the app</h2>
+      <h3>Picture activities and preferences</h3>
+      <p>The app stores the information needed for its games, such as sound preferences, local activity settings, and content-pack or game state. These are stored on your device or in its app-specific storage. You do not need a Golden Moments account.</p>
+      <h3>Family photos (in versions where available)</h3>
+      <p>When you decide to add pictures, the device's photo picker lets you choose them. The app creates resized working copies for matching and looking together. Those copies are kept in app-owned storage. Golden Moments does not operate a server for uploading or synchronizing your family's photos. The import feature is <strong>not in the currently published app-store versions</strong> as of this policy date.</p>
+      <p>The app is not intended to scan every photo in your library, modify originals, or identify people in pictures. Your photos may contain information about relatives or children, so consider their wishes before choosing or showing them.</p>
+      <h3>Medical information</h3>
+      <p>Golden Moments does not ask you to provide a diagnosis, medication list, treatment record, or cognitive test result. We do not intend to profile a user's dementia status from game activity. Please avoid sending medical details in support emails; if you voluntarily send such information, we receive what you include and handle it only as needed to address your request or comply with law.</p>
+      <h3>Support and rights requests</h3>
+      <p>If you contact us by email, we receive your email address, message, and any attachments you choose to send. We use that information to answer questions, troubleshoot, respond to privacy requests, handle content-rights concerns, and meet legal obligations. We do not ask you to send personal photos merely to receive basic support.</p>
+    </section>
+
+    <section aria-labelledby="other-services">
+      <h2 id="other-services">3. Apple, network connections, and software providers</h2>
+      <h3>Device photos and backups</h3>
+      <p>Apple provides Photos, the system picker, iCloud Photos, and backups on Apple devices. On Android, Google and the device manufacturer provide equivalent photo selection and backup services. These services operate separately from Golden Moments. Selecting a picture whose original is in iCloud may cause the operating system to download it. Depending on your backup settings, app-owned copies and preferences may appear in a device backup. Deleting a copy within the app does not remove backups or pictures that other people already have.</p>
+      <h3>Content connections and third-party components</h3>
+      <p>Some earlier app versions downloaded picture content over the internet. A content host may receive ordinary connection details, such as IP address and request information, when a request occurs. Newer candidate versions bundle picture activities for offline use. This does not mean every historical version or operating-system service is offline.</p>
+      <p>Some code versions include <strong>Firebase</strong> analytics or crash-reporting libraries. The current update candidate is configured to deactivate analytics collection and automatic crash reporting. Configuration alone does not prove the behavior of a signed, distributed app. We will assess the actual release build and any providers' data practices before updating the App Store's data-collection disclosures. We do not claim that these libraries can never transmit data.</p>
+      <p>If you choose to share optional device diagnostics with developers through Apple, Apple may make diagnostic information available under Apple's settings and terms. We do not request family photographs through that option.</p>
+      <h3>Other services you choose</h3>
+      <p>Opening the App Store, an external website, or email transfers you to a separate service with its own privacy practices. Our website is hosted by GitHub Pages; it is not a mobile-app photo server.</p>
+    </section>
+
+    <section aria-labelledby="sharing">
+      <h2 id="sharing">4. Sharing, advertising, and safeguards</h2>
+      <p>We do not sell family photographs or offer an advertising service based on them. Golden Moments does not provide a family-photo syncing or social account service. If you use your device's own share controls outside the app, you decide the recipient and that other service's rules apply.</p>
+      <p>Support email services and other independent providers process information as necessary to deliver their services. We do not promise that such services are physically located in one country or that any digital service is perfectly secure. We seek appropriate protections for information under our control, including limiting what the app is designed to collect. Set a device passcode and review your backup settings when storing personal family pictures.</p>
+    </section>
+
+    <section aria-labelledby="retention">
+      <h2 id="retention">5. Retention, removal, and backups</h2>
+      <p>Preferences and app-owned photo copies usually remain on the device until you change settings, remove copies through available controls, delete the app and its data, or the operating system removes them. <strong>Offload App is not the same as Delete App:</strong> offloading can retain documents and data.</p>
+      <p>Support conversations and data-protection requests are retained for as long as reasonably necessary to answer the request, investigate a problem, meet legal obligations, or resolve a dispute, and are reviewed for deletion when no longer needed.</p>
+      <p>Deleting files from the app does not guarantee deletion from existing cloud or computer backups or copies held by other services. See the step-by-step <a href={pathFor('/privacy-choices/')}>privacy choices and deletion guide</a>.</p>
+    </section>
+
+    <section aria-labelledby="rights">
+      <h2 id="rights">6. Your choices and legal rights</h2>
+      <p>You may use the included activities without importing any personal pictures. In app versions that include family-photo import, choose <strong>Your family photos → Remove</strong> or <strong>Remove all photo copies</strong> to remove the app's working copies, leaving your original Photos library unchanged. Manage operating-system photo permissions and backups separately.</p>
+      <p>To request access, correction, deletion, withdrawal of consent where applicable, or information about data we hold (such as a support email), write to <a href={'mailto:' + SUPPORT_EMAIL + '?subject=Golden%20Moments%20privacy%20request'}>{SUPPORT_EMAIL}</a>. We may ask for limited information to confirm authorization before acting and may need to retain some records where law requires or permits it. Your rights and our obligations depend on applicable law; asking us cannot remotely remove files held only on your device or by independent services.</p>
+      <p>Our <a href={pathFor('/privacy-choices/')}>privacy choices guide</a> explains how to remove local copies and check backups.</p>
+    </section>
+
+    <section aria-labelledby="children">
+      <h2 id="children">7. Children and international use</h2>
+      <p>The app is designed for older adults, their relatives, and caregivers; it is not directed to children under 13. It has no child account or public photo-posting feature. If you believe a child has sent personal information to us through email, contact us so we can address it.</p>
+      <p>Cloudjet Solutions Pte. Ltd. is based in Singapore. Apple, Google, email services, and other providers may process information in other countries. Applicable data-protection and cross-border-transfer requirements continue to apply.</p>
+    </section>
+
+    <section aria-labelledby="changes">
+      <h2 id="changes">8. Changes and contact</h2>
+      <p>We will update this notice when relevant features or data practices change, showing the updated effective date. We will provide additional notice or seek consent where required. An updated policy does not make an earlier undisclosed practice acceptable.</p>
+      <p>Contact: <a href={'mailto:' + SUPPORT_EMAIL}>{SUPPORT_EMAIL}</a>. See also <a href={pathFor('/safety/')}>safety and intended use</a>, <a href={pathFor('/terms/')}>terms and the Apple license</a>, and the <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">currently published App Store listing</a>.</p>
+    </section>
+
+    <p class="back-home"><a class="text-link" href={pathFor('/legal/')}>← All legal information</a></p>
+  </div>
+</SiteLayout>

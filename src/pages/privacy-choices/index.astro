@@ -1,0 +1,71 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { SUPPORT_EMAIL, pathFor } from '../../config/site';
+---
+<SiteLayout
+  title="Privacy choices and local deletion"
+  description="How to remove imported Golden Moments photo copies without deleting original pictures, check device backups, and make a privacy request."
+>
+  <section class="interior-hero">
+    <div class="reading-column">
+      <p class="eyebrow">Golden Moments / Your choices</p>
+      <h1>Privacy choices and deletion</h1>
+      <p class="interior-lede">You can stop, remove an app copy, or delete the app. Your original photographs in Photos are separate.</p>
+      <p class="small-print"><time datetime="2026-10-18">Updated October 18, 2026</time></p>
+    </div>
+  </section>
+  <div class="reading-column prose-page">
+    <section class="legal-summary" aria-labelledby="choices-summary">
+      <h2 id="choices-summary">First, two important things</h2>
+      <ul>
+        <li><strong>Removing a photo in Golden Moments does not delete the original</strong> from your Photos library.</li>
+        <li><strong>Deleting app copies does not erase previous backups</strong> or copies sent to someone else. Those must be managed separately.</li>
+      </ul>
+      <p>You can play the included activities without adding personal photographs or registering an account.</p>
+    </section>
+    <nav class="legal-page-nav" aria-label="On this page">
+      <p><strong>Jump to</strong></p>
+      <a href="#remove-one">Remove one picture</a>
+      <a href="#remove-all">Remove all app copies</a>
+      <a href="#delete-app">Delete other app data</a>
+      <a href="#backups">Check backups</a>
+      <a href="#permissions">Photo permission</a>
+      <a href="#contact">Request deletion from us</a>
+    </nav>
+
+    <h2 id="remove-one">Remove one imported picture</h2>
+    <p>If your installed app version offers the family-photo feature:</p>
+    <ol>
+      <li>Open Golden Moments and choose <strong>Your family photos</strong>.</li>
+      <li>Find the photo and choose <strong>Remove</strong>.</li>
+      <li>Read the confirmation and select the option to continue.</li>
+    </ol>
+    <p>This removes the app's working copy, not the original photo. If you do not see <strong>Your family photos</strong>, your installed version may not include this feature.</p>
+
+    <h2 id="remove-all">Remove all family-photo copies kept by the app</h2>
+    <ol>
+      <li>Open <strong>Your family photos</strong>.</li>
+      <li>Choose <strong>Remove all photo copies</strong> and confirm.</li>
+      <li>If an error appears, try again or <a href={pathFor('/support/')}>contact support</a> with a description—not your family photographs.</li>
+    </ol>
+    <p>Deleting app-owned copies does not affect your photo library, cloud photo library, or previous device backups.</p>
+
+    <h2 id="delete-app">Remove the app and its remaining local data</h2>
+    <p>On iPhone or iPad, use the system's <strong>Delete App</strong> action and follow Apple's confirmation. This normally removes the app and its locally stored app data. <strong>Offload App</strong> is different: it can keep the app's documents and data so they are available after reinstalling.</p>
+    <p>On Android, use the device's app settings to uninstall Golden Moments or clear its data if that is what you intend. Menus vary by manufacturer. Clearing data is irreversible, so review what you wish to keep beforehand.</p>
+    <p>We cannot erase local content remotely, because Golden Moments does not operate a user account or family-photo server. If you have saved anything you wish to keep, make your own arrangements before deleting the app.</p>
+
+    <h2 id="backups">Backups, iCloud, and other copies</h2>
+    <p>iCloud, Google, device-manufacturer, or computer backups may contain app documents, depending on your settings and the installed version. Removing something from the app—or deleting the app—does not automatically delete copies from old backups. Check your device's backup settings and the applicable Apple guidance before removing backups, especially if they protect other important information.</p>
+    <p>If you separately shared a photograph with another person or app, you will need to manage that copy with the recipient or service. We cannot remotely recall or erase it.</p>
+
+    <h2 id="permissions">Control photo access</h2>
+    <p>Adding photos is optional. In the versions that offer it, Golden Moments uses your explicit photo selections. You can change applicable Photos permissions in the device's Settings. Revoking permission alone does not necessarily remove copies already imported; use the app's removal controls above.</p>
+
+    <h2 id="contact">Ask about information we actually hold</h2>
+    <p>We may have your email address and message if you contacted support. To ask for access, correction, deletion, or withdrawal of consent where legally available, send an email to <a href={'mailto:' + SUPPORT_EMAIL + '?subject=Golden%20Moments%20privacy%20request'}>{SUPPORT_EMAIL}</a>. Tell us what information you want us to locate. We may verify authorization using the minimum information reasonably needed, and some records may need to be kept under law.</p>
+    <p><strong>Do not send medical records, a diagnosis, identity documents, or photographs with the initial request.</strong> We cannot access or delete material that is only on your device or in a separate provider's account.</p>
+    <p>For additional details, read the <a href={pathFor('/app-privacy/')}>mobile app privacy policy</a>. The <a href={pathFor('/privacy/')}>website privacy notice</a> describes the separate website.</p>
+    <p class="back-home"><a class="text-link" href={pathFor('/legal/')}>← All legal information</a></p>
+  </div>
+</SiteLayout>
