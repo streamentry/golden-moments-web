@@ -71,7 +71,7 @@ test('Apple Standard EULA remains separate from website terms and consumer right
 
 test('privacy choices distinguish app copies, originals, backup and requests', () => {
   const p = read('src/pages/privacy-choices/index.astro');
-  for (const phrase of ['Remove all photo copies', 'original', 'backups', 'Offload App', 'Delete App', 'SUPPORT_EMAIL', 'not guarantee']) {
+  for (const phrase of ['Remove all photo copies', 'original', 'backups', 'Offload App', 'Delete App', 'SUPPORT_EMAIL', 'does not automatically delete']) {
     assert.ok(p.toLowerCase().includes(phrase.toLowerCase()), 'deletion guide missing ' + phrase);
   }
 });

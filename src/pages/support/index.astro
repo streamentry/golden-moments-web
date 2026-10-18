@@ -1,10 +1,10 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import { APP_STORE_URL, SUPPORT_EMAIL, pathFor } from '../../config/site';
+import { APP_STORE_URL, PLAY_STORE_URL, SUPPORT_EMAIL, pathFor } from '../../config/site';
 ---
 <SiteLayout
   title="Support and contact"
-  description="Golden Moments help for iPhone and iPad, email support, privacy and deletion requests, accessibility problems, and App Store purchases."
+  description="Golden Moments help for iPhone, iPad and Android, email support, privacy and deletion requests, accessibility problems, and App Store purchases."
 >
   <section class="interior-hero">
     <div class="reading-column">
@@ -22,13 +22,14 @@ import { APP_STORE_URL, SUPPORT_EMAIL, pathFor } from '../../config/site';
       <p class="small-print">This opens your email app. There is no account, live-chat bot, or website upload form.</p>
     </section>
     <h2>What to include</h2>
-    <p>Tell us whether you're on iPhone, iPad, or this website. Describe the screen, the action you tried, and what happened. If you know the app version, include it. A short description is enough to start.</p>
+    <p>Tell us whether you're on iPhone, iPad, Android, or this website. Describe the screen, the action you tried, and what happened. If you know the app version, include it. A short description is enough to start.</p>
     <p><strong>Please do not email personal family photographs, medical records, diagnoses, passwords, or payment card details.</strong> We will ask only for further details if needed.</p>
 
     <h2>Simple troubleshooting</h2>
+    <p>Our <a href={pathFor('/help/')}>version-specific Help guide</a> explains gentle matching, selected photos, and using the app offline.</p>
     <ol>
       <li>If the screen seems stuck, use Back or close and reopen the app.</li>
-      <li>Check the <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">current App Store listing</a> for device requirements and available updates.</li>
+      <li>Check the <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">App Store</a> or <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer">Google Play</a> listing for device requirements and updates.</li>
       <li>If choosing a photo fails (in a version with that feature), try one smaller picture and check available storage.</li>
       <li>If you still need help, email us with the steps above.</li>
     </ol>
@@ -45,7 +46,7 @@ import { APP_STORE_URL, SUPPORT_EMAIL, pathFor } from '../../config/site';
     <p>The website does not take payments. If an App Store purchase applies to the version you use, Apple manages the transaction. For eligible refund requests or purchase problems, visit <a href="https://reportaproblem.apple.com/" target="_blank" rel="noopener noreferrer">Apple's purchase support</a>. This does not replace any refund rights you have under applicable law.</p>
 
     <h2>Current and upcoming features</h2>
-    <p>The version currently published in the App Store may differ from development screenshots or code. Family-photo importing is being prepared for an update and is <strong>not available in the currently published App Store version</strong> as of October 18, 2026. This website does not upload or synchronize family photographs.</p>
+    <p>The version currently published in the App Store may differ from development screenshots or code. Family-photo importing is being prepared for an update and is <strong>not available in the currently published app-store versions</strong> as of October 18, 2026. This website does not upload or synchronize family photographs.</p>
     <p class="back-home"><a class="text-link" href={pathFor('/legal/')}>← All legal information</a></p>
   </div>
 </SiteLayout>

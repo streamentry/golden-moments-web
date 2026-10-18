@@ -23,7 +23,10 @@ GitHub Pages was enabled for this repository's existing landing site as confirme
 As observed on the US listing on October 18, 2026:
 - Published title: **Golden Moments - Memento Maze**; subtitle: **The game that train your brain**.
 - The description makes **brain-health / keep-your-mind-sharp** claims and contains apparently testimonial-style “Betty, 72” and “Michael, 45” quotes without evidence.
-- App Privacy label: **Data Not Collected**.
+- Apple App Privacy label: **Data Not Collected**.
+- Google Play's Data safety section currently declares **No data collected** and **No data shared**; audit the signed Android build before confirming those claims.
+- Both published stores still make brain-health claims and include unverified testimonial-style quotes; correct both listings before release.
+- Google Play's support email differs from the website's configured contact. Confirm ownership and monitor both mailboxes before store updates.
 - Age rating **16+**, with **Advertising** and **Unrestricted Web Access** declared.
 - Privacy link goes to **cschanhniem.github.io/TheOpenPath/golden-moments-privacy/**, not this website.
 - Seller is **CLOUDJET SOLUTIONS PTE. LTD.**; copyright displays **© Hong Le 2025**.
@@ -53,6 +56,13 @@ As observed on the US listing on October 18, 2026:
 - [ ] Consider the FTC Health Breach Notification Rule only after evaluating applicability; do not assume HIPAA status or exemption merely because the app is recreational.
 - [ ] Verify territories: US targeting alone does not limit App Store availability. If EU/UK/EEA distribution is enabled, check region-specific trader, privacy, consumer and regulated-medical-device declarations.
 - [ ] Require counsel to review intended use with **dementia/Alzheimer's** in app metadata. Avoid “therapy,” “train your brain,” “diagnostic,” “slows progression,” or implied clinical study results. A disclaimer does not override functionality or marketing.
+
+## Google Play and Android review gates
+
+- [ ] Audit the signed Android app's SDK initialization, permissions, and network traffic. Align Google Play Data safety responses with the actual binary; do not reuse Apple's questionnaire answers.
+- [ ] Correct brain-training and medical-benefit marketing and unverified testimonials in both store listings and all locales.
+- [ ] Reconcile the Google Play and website contact mailboxes; establish an internal privacy-request and incident-response owner.
+- [ ] Review Google Play privacy URL, deletion information, age rating, permissions, and relevant country availability.
 
 ## License, content rights, and presentation
 
@@ -100,3 +110,6 @@ A CI pass, a GitHub merge, or this checklist **does not mean the app is legally 
 - [Washington My Health My Data Act](https://app.leg.wa.gov/RCW/default.aspx?cite=19.373)
 - [Singapore Personal Data Protection Regulations 2021](https://sso.agc.gov.sg/SL/PDPA2012-S63-2021?WholeDoc=1)
 - [Public US App Store listing, ID 6749312459](https://apps.apple.com/us/app/golden-moments-memento-maze/id6749312459)
+
+- [Singapore PDPA — DPO designation and business-contact obligations](https://sso.agc.gov.sg/Act/PDPA2012?ProvIds=pr11-)
+- [Google Play current public listing](https://play.google.com/store/apps/details?id=com.mindfulness.golden_moments)
