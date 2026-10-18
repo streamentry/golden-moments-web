@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Illustration of a garden sunflower">
+  <rect width="320" height="320" rx="18" fill="#FDF9F0"/>
+  <circle cx="160" cy="145" r="118" fill="#F5EDE0"/>
+  <path d="M160 174c-2 35-2 70 0 114" fill="none" stroke="#256B29" stroke-width="9" stroke-linecap="round"/>
+  <path d="M157 236c-54-44-76-31-68-8 10 25 40 24 68 8zM162 260c38-46 66-44 68-23 3 23-30 35-68 23z" fill="#256B29" stroke="#7A5600" stroke-width="3" stroke-linejoin="round"/>
+  <g transform="translate(160 127)">
+    <ellipse cy="-57" rx="21" ry="38" fill="#C99200"/>
+    <ellipse cy="-57" rx="18" ry="34" fill="#FFE08A" transform="rotate(36)"/>
+    <ellipse cy="-57" rx="21" ry="38" fill="#C99200" transform="rotate(72)"/>
+    <ellipse cy="-57" rx="18" ry="34" fill="#FFE08A" transform="rotate(108)"/>
+    <ellipse cy="-57" rx="21" ry="38" fill="#C99200" transform="rotate(144)"/>
+    <ellipse cy="-57" rx="18" ry="34" fill="#FFE08A" transform="rotate(180)"/>
+    <ellipse cy="-57" rx="21" ry="38" fill="#C99200" transform="rotate(216)"/>
+    <ellipse cy="-57" rx="18" ry="34" fill="#FFE08A" transform="rotate(252)"/>
+    <ellipse cy="-57" rx="21" ry="38" fill="#C99200" transform="rotate(288)"/>
+    <ellipse cy="-57" rx="18" ry="34" fill="#FFE08A" transform="rotate(324)"/>
+    <circle r="47" fill="#7A5600"/>
+    <circle r="37" fill="#5C5346" stroke="#C99200" stroke-width="3"/>
+    <g fill="#C99200">
+      <circle cx="-19" cy="-16" r="3.5"/><circle cx="0" cy="-22" r="3.5"/><circle cx="18" cy="-12" r="3.5"/>
+      <circle cx="-25" cy="6" r="3.5"/><circle cx="-7" cy="2" r="3.5"/><circle cx="13" cy="7" r="3.5"/>
+      <circle cx="-12" cy="24" r="3.5"/><circle cx="14" cy="25" r="3.5"/>
+    </g>
+  </g>
+  <path d="M82 286h158" stroke="#7D7366" stroke-width="4" stroke-linecap="round"/>
+</svg>

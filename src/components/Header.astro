@@ -1,0 +1,26 @@
+---
+import { APP_STORE_URL, pathFor } from '../config/site';
+const home = pathFor('/');
+---
+<header class="site-header">
+  <div class="header-inner page-shell">
+    <a href={home} class="brand" aria-label="Golden Moments — home">
+      <svg class="brand-mark" width="42" height="42" viewBox="0 0 42 42" aria-hidden="true">
+        <rect x="1" y="1" width="40" height="40" rx="13" fill="#FFE08A" stroke="#7A5600" stroke-width="1.5"/>
+        <circle cx="21" cy="17" r="8" fill="none" stroke="#7A5600" stroke-width="2.2"/>
+        <path d="M10 30c5-7 8-4 11-9 4 7 8 6 11 9" fill="none" stroke="#7A5600" stroke-linecap="round" stroke-width="2.2"/>
+        <circle cx="21" cy="17" r="2.2" fill="#C99200"/>
+      </svg>
+      <span>Golden Moments</span>
+    </a>
+    <nav aria-label="Main navigation" class="nav-links">
+      <a href={home + '#how-it-works'}>How it works</a>
+      <a href={pathFor('/activities/')}>Activities</a>
+      <a href={home + '#questions'}>Questions</a>
+    </nav>
+    <a class="header-app-link" href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
+      <span>Get the app</span>
+      <svg viewBox="0 0 20 20" width="19" height="19" fill="none" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</header>

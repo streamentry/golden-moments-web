@@ -1,0 +1,52 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { APP_STORE_URL, pathFor } from '../../config/site';
+---
+<SiteLayout
+  title="Gentle picture activities for older adults"
+  description="Three calm picture activities to try with an older adult or a loved one living with dementia or Alzheimer's. Follow their interests, with no quiz or pressure."
+>
+  <section class="interior-hero">
+    <div class="reading-column">
+      <p class="eyebrow">Time together / Activity ideas</p>
+      <h1>Small activities. No big expectations.</h1>
+      <p class="interior-lede">You don't need a full afternoon or a special skill to spend meaningful time together. Start with something familiar, notice what feels pleasant, and let that be enough.</p>
+    </div>
+  </section>
+
+  <section class="interior-section">
+    <div class="reading-column editorial-list">
+      <article>
+        <p class="eyebrow">01 / Look</p>
+        <h2>Choose a familiar picture.</h2>
+        <p>A cup of tea. A garden flower. An old-fashioned radio. Sit beside one another and look. You might say, “I like the color of this one.” Leave space for the other person to respond, or to enjoy the image in silence.</p>
+        <p class="hint">Keep it easy: one picture at a time can be plenty.</p>
+      </article>
+      <article>
+        <p class="eyebrow">02 / Match</p>
+        <h2>Find two pictures that belong together.</h2>
+        <p>Lay out two pairs of large, easy-to-see pictures. Invite the person to point or tap at a matching pair. If the game stops being enjoyable, stop the game. It doesn't matter how many pairs are found.</p>
+        <p class="hint">Keep it easy: begin with the pictures already face up.</p>
+      </article>
+      <article>
+        <p class="eyebrow">03 / Talk</p>
+        <h2>Let a memory come naturally.</h2>
+        <p>If a picture brings up a story, listen without testing names or dates. You can gently respond to the feeling or detail they share. There's no need to correct, quiz, or ask someone to “try harder.”</p>
+        <p class="hint">Keep it easy: conversation is optional. A quiet shared moment also counts.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="resource-panel" aria-labelledby="resource-title">
+    <div class="reading-column">
+      <p class="eyebrow">A note for caregivers</p>
+      <h2 id="resource-title">Follow the person, not a plan.</h2>
+      <p>People's preferences and abilities vary. Offer choices, pay attention to comfort, and end the activity whenever the person wishes. Picture activities are for leisure and connection; they do not diagnose or treat dementia.</p>
+      <p>For caregiving guidance beyond leisure activities, visit the <a href="https://www.alz.org/help-support" target="_blank" rel="noopener noreferrer">Alzheimer's Association's support resources</a>.</p>
+      <a href={APP_STORE_URL} class="button button-primary" target="_blank" rel="noopener noreferrer">See Golden Moments on the App Store <span aria-hidden="true">↗</span></a>
+      <p class="small-print">Personal family-photo activities are planned but are not part of the currently published version.</p>
+    </div>
+  </section>
+
+  <div class="reading-column back-home"><a class="text-link" href={pathFor('/')}>← Back to Golden Moments</a></div>
+</SiteLayout>

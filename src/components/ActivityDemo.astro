@@ -1,0 +1,52 @@
+---
+import { pathFor } from '../config/site';
+const pictures = [
+  { kind: 'teacup', label: 'Tea cup', image: pathFor('/illustrations/teacup.svg') },
+  { kind: 'sunflower', label: 'Sunflower', image: pathFor('/illustrations/sunflower.svg') },
+  { kind: 'sunflower', label: 'Sunflower', image: pathFor('/illustrations/sunflower.svg') },
+  { kind: 'teacup', label: 'Tea cup', image: pathFor('/illustrations/teacup.svg') }
+];
+---
+<div class="demo-wrap" aria-labelledby="demo-heading">
+  <div class="demo-caption">
+    <span class="demo-kicker"><span class="dot" aria-hidden="true"></span> Play a little</span>
+    <span class="demo-illustration-note">An interactive illustration, not an app screenshot</span>
+  </div>
+  <section class="demo-card" aria-label="Try a gentle picture matching activity" data-demo>
+    <div class="demo-card-top">
+      <div>
+        <h2 id="demo-heading">Find the matching pictures.</h2>
+        <p>Take your time. There is no timer.</p>
+      </div>
+      <svg class="demo-flower" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true">
+        <circle cx="16" cy="16" r="4" fill="#7A5600"/>
+        <path d="M16 3v7M16 22v7M3 16h7m12 0h7M7 7l5 5m8 8 5 5M25 7l-5 5m-8 8-5 5" stroke="#C99200" stroke-width="3.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="demo-grid" role="group" aria-label="Four picture cards. Find the two matching pairs.">
+      {pictures.map((picture, i) => (
+        <button
+          class="demo-tile"
+          type="button"
+          data-card
+          data-kind={picture.kind}
+          data-position={i + 1}
+          aria-pressed="false"
+          aria-label={picture.label + ', picture ' + (i + 1)}
+        >
+          <img src={picture.image} alt="" width="220" height="220" loading={i > 1 ? 'lazy' : 'eager'} />
+          <span class="match-check" aria-hidden="true">✓</span>
+        </button>
+      ))}
+    </div>
+    <div class="demo-foot">
+      <p data-message aria-live="polite" aria-atomic="true">Tap any two pictures that match.</p>
+      <button class="demo-reset" data-reset type="button">
+        <svg viewBox="0 0 20 20" width="20" height="20" fill="none" aria-hidden="true"><path d="M16.5 9.5A6.5 6.5 0 1 1 14.5 5M16.5 4v5h-5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/></svg>
+        Start again
+      </button>
+    </div>
+  </section>
+  <p class="demo-afterword">No points. No rush. Just a moment to enjoy.</p>
+</div>
+<script type="module" src={pathFor('/scripts/demo.js')} is:inline></script>

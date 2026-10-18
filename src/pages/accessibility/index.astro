@@ -1,0 +1,28 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { SUPPORT_EMAIL, pathFor } from '../../config/site';
+---
+<SiteLayout title="Website accessibility" description="Accessibility approach and contact details for the Golden Moments website, with large readable text and keyboard-friendly controls.">
+  <section class="interior-hero">
+    <div class="reading-column">
+      <p class="eyebrow">For everyone who visits</p>
+      <h1>Accessibility</h1>
+      <p class="interior-lede">Good design should feel comfortable to use—not something you have to learn.</p>
+    </div>
+  </section>
+  <div class="reading-column prose-page">
+    <h2>How we've designed this website</h2>
+    <p>The website uses readable text, strong contrast, large buttons, clear labels, keyboard-operable links, and layouts that reflow on smaller screens. Motion is minimal and respects the reduced-motion setting on your device.</p>
+    <p>The picture-matching demonstration has visible cards, accessible button labels, a spoken status announcement for screen readers, and no timer or automatic turn changes. You can restart it at any time.</p>
+
+    <h2>Ways to make reading easier</h2>
+    <p>You can increase the browser's text size or zoom. If you use a screen reader or keyboard to navigate, the site has landmarks and a skip-to-content link. There are no required swiping or dragging gestures.</p>
+
+    <h2>Ongoing improvements</h2>
+    <p>We have designed for accessibility, but this statement is not a certification of conformance on every browser and assistive device. Real-user and device testing remains important. If anything is difficult to use, please tell us.</p>
+
+    <h2>Reach us</h2>
+    <p>Email <a href={'mailto:' + SUPPORT_EMAIL + '?subject=Golden%20Moments%20website%20accessibility'}>{SUPPORT_EMAIL}</a> and describe the page and what happened. You do not need to share medical information.</p>
+    <p class="back-home"><a class="text-link" href={pathFor('/')}>← Back to Golden Moments</a></p>
+  </div>
+</SiteLayout>

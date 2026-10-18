@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Illustration of a vintage tea cup">
+  <rect width="320" height="320" rx="18" fill="#FDF9F0"/>
+  <circle cx="160" cy="145" r="118" fill="#F5EDE0"/>
+  <path d="M118 102c-13-17 12-18 2-36M159 103c-12-15 12-20 0-41M201 104c-13-18 13-21 1-38" fill="none" stroke="#7D7366" stroke-width="5" stroke-linecap="round" opacity=".75"/>
+  <path d="M91 126h137v53c0 40-30 70-68 70-39 0-69-30-69-70z" fill="#FFE08A" stroke="#7A5600" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M228 135h17c26 0 28 40 2 49-9 4-17 3-24 0" fill="none" stroke="#7A5600" stroke-width="9" stroke-linecap="round"/>
+  <path d="M112 152h93" stroke="#C99200" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+  <path d="M109 174h98" stroke="#C99200" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+  <path d="M68 254h186" stroke="#7A5600" stroke-width="7" stroke-linecap="round"/>
+  <ellipse cx="160" cy="264" rx="103" ry="15" fill="#EADFCB" opacity=".9"/>
+  <ellipse cx="160" cy="255" rx="97" ry="12" fill="none" stroke="#7A5600" stroke-width="5"/>
+  <circle cx="155" cy="205" r="10" fill="#7A5600"/>
+  <path d="M155 196v18M146 205h18" stroke="#FFE08A" stroke-width="2"/>
+</svg>

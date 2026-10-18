@@ -1,0 +1,28 @@
+# Temporary bootstrap workflow: creates a genuine npm lockfile on the feature branch.
+# Remove this workflow before merging to main.
+name: Resolve npm lockfile
+on:
+  push:
+    branches: [feat/astro-landing]
+
+permissions:
+  contents: write
+
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'chore: resolve npm lockfile')"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - run: npm install --package-lock-only --ignore-scripts --no-audit --no-fund
+      - name: Commit exact resolved graph
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package-lock.json
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: resolve npm lockfile"
+          git push origin HEAD:feat/astro-landing
