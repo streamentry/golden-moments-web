@@ -46,7 +46,7 @@ test('app privacy does not confuse local photos with developer collection', () =
     'deletion',
     "pathFor('/privacy-choices/')",
     "pathFor('/privacy/')",
-    'not in the currently published App Store version'
+    'not in the currently published app-store versions'
   ]) assert.ok(policy.toLowerCase().includes(phrase.toLowerCase()), 'privacy missing: ' + phrase);
   assert.doesNotMatch(policy, /We collect no data|No data is ever shared|HIPAA compliant|100% secure|guaranteed deletion|no network requests/i);
 });
