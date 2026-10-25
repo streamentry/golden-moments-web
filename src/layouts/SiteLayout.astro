@@ -39,6 +39,12 @@ const previewUrl = new URL(pathFor('/og-card.svg'), Astro.site ?? Astro.url).hre
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+    <aside class="moved-notice" aria-label="Site moved">
+      <p>
+        Golden Moments has a new home with free games and activity guides:
+        <a href="https://dementiaactivities.games/">dementiaactivities.games</a>. These pages stay here for links in the app.
+      </p>
+    </aside>
     <Header />
     <main id="main">
       <slot />

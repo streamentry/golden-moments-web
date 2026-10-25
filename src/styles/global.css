@@ -48,6 +48,9 @@ p { margin-bottom: 20px; }
 .reading-column { max-width: var(--gm-reading); width: calc(100% - 48px); margin-inline: auto; }
 .skip-link { position: absolute; z-index: 1000; top: -100px; left: 20px; padding: 12px 20px; background: var(--gm-background); color: var(--gm-primary); border: 3px solid var(--gm-primary); }
 .skip-link:focus { top: 12px; }
+.moved-notice { background: var(--gm-surface); border-bottom: 1px solid var(--gm-surface-sunken); color: var(--gm-ink); }
+.moved-notice p { max-width: var(--gm-page); width: calc(100% - 48px); margin: 0 auto; padding: var(--gm-space-sm) 0; font-size: 18px; line-height: 1.5; }
+.moved-notice a { color: var(--gm-primary); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 .eyebrow {
   display: flex;
   align-items: center;
